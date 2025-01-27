@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>TrackFit</h2>
+        <nav>
+            <ul>
+                <li id="home-nav" class="nav-item active">Home</li>
+                <li id="current-workout-nav" class="nav-item">Current Workout</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <!-- Home Screen -->
+        <div id="home-screen">
+            <h1>Welcome to TrackFit</h1>
+            <div id="routine-selection">
+                <h2>Select Routine</h2>
+                <button id="legs-btn">Legs</button>
+                <button id="push-btn">Push</button>
+                <button id="pull-btn">Pull</button>
+            </div>
+        </div>
+
+        <!-- Current Workout Screen -->
+        <div id="current-workout" class="hidden">
+            <div id="exercise-list"></div>
+            <div id="total-weight">
+                <h3>Total Weight Lifted: <span id="total-weight-value">0</span> kg</h3>
+            </div>
+            <div>
+                <button id="start-workout-btn" disabled>Start Workout</button>
+                <button id="pause-workout-btn" disabled>Pause Workout</button>
+                <button id="stop-workout-btn" disabled>Stop Workout</button>
+                <button id="discard-workout-btn" disabled>Discard Workout</button>
+            </div>
+            <div id="timer">
+                <h3>Timer: <span id="timer-value">00:00</span></h3>
+            </div>
+            <div id="workout-summary"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
